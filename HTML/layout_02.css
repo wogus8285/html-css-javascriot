@@ -6,10 +6,33 @@
 
 body {}
 
-.wrap {}
+.wrap {
+    font-size: 20px;
+    text-align: center;
+}
 
-.header {}
+.header {
+    background-color: #D9D9D9;
+    height: 100px;
+    line-height: 100px;
+}
 
-.content {}
 
-.footer {}
+.contents {
+    background-color: #e6e6e6;
+    height: 624px;    
+}
+
+.contents p {
+    width: 800px;
+    margin:  auto;
+    padding-top: 260px;
+}
+
+
+
+.footer {
+    background-color: #D9D9D9;
+    height: 300px;
+    line-height: 300px;
+}
