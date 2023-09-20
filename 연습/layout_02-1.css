@@ -25,9 +25,15 @@ body {}
 .contents {
     height: 624px;
     background-color: #E6E6E6 ;
-    line-height: 624px;
-
 }
+
+.contents p{
+    width: 1400px;
+     padding-top: 260px;
+     margin: auto;
+}
+
+
 
 .footer {
     height: 300x;
