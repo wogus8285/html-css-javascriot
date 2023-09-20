@@ -46,14 +46,14 @@ body {
     padding: 0 30px;
     height: 100px;
     display: block;
-    line-height: 100px;
-    
+    line-height: 100px;    
     
 }
 
-.header .inner .gnb li a :hover {
+.header .inner .gnb li a:hover {
     color: orangered;
 }
+/* 여기까지 */
 
 
 .header .inner .member {
