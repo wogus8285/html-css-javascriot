@@ -20,6 +20,7 @@
 
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
 }
 
 .header{
@@ -53,6 +54,8 @@ body{
     text-align: center;
     line-height: 50px;
     border-radius: 8px;
+    margin-left: 72px;
+
 }
 
 .gnb li a:hover {
@@ -65,23 +68,162 @@ body{
 
 }
 
-h2{
-    text-align: center;
+.contents{
+    margin-bottom: 248px;
     margin-top: 120px;
+}
+
+.contents h2{
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
     margin-bottom: 80px;
 }
+
+
+/* members */
 
 .members .img {
     display: block;
 }
 
 .members{
+    width: 1170px;
     display: flex;
-
+    gap: 30px;
     margin: 0 auto;
+    margin-bottom: 130px;
+}
+
+.members .photo{
+    margin-bottom: 26px;
+}
+
+.members .names {
+    color: #4b4b4b;
+}
+
+.members .names h3{
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.members .names p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* movie */
+.movie{
+    width: 970px;
+    margin: 0 auto;
+    margin-bottom: 170px;
+}
+
+.movie p {
+    text-align: center;
+    font-size: 24px;
+    width: 65%;
+    margin: 0 auto;
+    padding-bottom: 36px;
+    line-height: 1.6;
 }
 
 
-.contents{}
+/* blog */
+.blog{
+    width: 1170px;
+    margin: 0 auto;
+}
 
-.footer{}
+.blog .titles {
+    position: relative;
+    
+    margin-bottom: 87px;
+}
+
+.blog .titles h3 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.blog .titles a{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.blog ul {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.blog ul li {
+    display: flex;
+    /* 여기까지하면 이미지가 인라인 요소라서 화이트 스페이스가 생김 그래서 이미지에 디스플레이 블록 */
+    /* margin-bottom: 100px;   <- 이건 라스트 차일드 할 때 */
+    gap: 32px;
+}
+
+/* 순서 지정 -> nth child / 퍼스트 , 라스트 */
+ 
+/* .blog ul li:last-child {
+    margin-bottom: 0;
+} */
+
+.blog ul li img {
+    display: block;
+    width: 370px;
+}
+
+.blog .text {
+    color: #4b4b4b;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+.blog .text h4 {
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.blog .text p {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 76px;
+    margin-top: 30px;
+ 
+
+}
+
+.blog .text .bottom {
+    font-size: 14px;
+    color: #808080;
+    font-weight: 500;
+}
+
+.footer{
+    color: #808080;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding-top: 52px;
+    padding-bottom: 56px;
+}
+
+.footer p {
+    font-style: 13px;
+    margin-bottom: 30px;
+}
+
+.footer .sns {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+    font-size: 24px;
+}
