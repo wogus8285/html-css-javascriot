@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    /* 텍스트데코레이션 0 보고 함 ㅜㅜ */
+    text-decoration: none;
+    color: inherit;
+}
+
+.body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* 여기서 부터 헤더 */
+.header {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.15);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img{
+    margin-left: 60px;
+    display: block;
+    width: 93px;
+}
+
+.gnb {
+    margin-left: auto;
+}
+
+.gnb ul {
+    display: flex;
+    gap: 110px;
+    margin-right: 126px;
+}
+
+.header .btn {
+    margin-right: 60px;
+    /* padding: 15px 43px; */
+    background-color: #222;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.header .btn a{
+    display: block;
+    padding: 15px 43px;
+}
+
+/* <<<<<<<<여기서 부터 컨텐츠>>>>>>>>>> */
+
+/* 여긴 섹션 1 */
+.contents {
+    width: 1147px;
+    margin: 0 auto;
+    
+}
+
+.contents .section:nth-child(1) h2 {
+    margin: 120px 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.members ul {
+    margin-bottom: 130px;
+    display: flex;
+    gap: 30px;
+}
+
+/* 여긴 섹션2 */
+
+.inner p {
+    font-size: 24px;
+    text-align: center;
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.inner img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 170px;
+
+    /* display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* margin: 0 auto; */
+}
+
+/* 여긴 섹션3 */
+
+.blog {
+    width: 1147px;
+}
+.blog .title{
+    display: flex;
+    position: relative;
+    margin-bottom: 94px;
+}
+
+
+.title h3{
+    font-size: 36px;
+}
+
+.title p{
+    font-weight: 400;
+    color: #808080;
+    font-size: 14px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+.title p i{
+    margin-left: 25px;
+}
+
+.photo{
+    width: 1049px;
+}
+
+.photo ul{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.photo li {
+    width: 1049px;
+    display: flex;
+}
+
+.text{
+    font-weight: 500;
+    color: #4b4b4b;
+    margin-left: 32px;
+}
+
+.photo h3{
+    font-size: 24px;
+    margin-bottom: 29px;
+}
+
+.photo span{
+    display: block;
+    font-size: 14px;
+    color: #808080;
+    margin-top: 65px;
+}
+
+/*  여기서부터 푸터  */
+
+.footer {
+    margin-top: 330px;
+    background-color: #F5F5F5;
+    height: 179px;
+    font-size: 13px;
+    color: #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer ul{
+    display: flex;
+    gap: 30px;
+}
+
+
