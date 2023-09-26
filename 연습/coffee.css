@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.ul{
+ul{
     list-style: none;
 }
 
@@ -14,16 +14,71 @@ a{
 }
 
 .header{
+    padding: 0 200px;
+    height: 100px;
     color: #e9e9e9;
     background-color: #222;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header .btnes{
+    font-size: 11px;
+    display: flex;
+    gap: 20px
+}
+
+.btn {
+    padding: 8px 15px;
+    background-color: #222;
+    border: solid 1px #B28C68;
+    border-radius: 20px;
+}
+
+.header .btnfilled{
+    padding: 8px 15px;
+    background-color:#B28C68;
+    border-radius: 20px;
+
+}
+
+.logo img {
+    display: block;
+    width: 96px;
 }
 
 .logo{
-
+   
 }
 
 .gnb ul{
+    font-size: 14px;
     display: flex;
+    gap: 60px;
+}
+
+
+
+.photo1{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo1 img{
+    display: block;
+    width: 220px;
+}
+
+.photo2 img{
+    display: block;
+    width: 220px;
+}
+
+.photo{
+    gap: 20px;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 200px;
 }
