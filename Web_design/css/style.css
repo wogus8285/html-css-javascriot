@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.body{
+    font-size: 14px;
+    color: #222;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #002866;
+}
+
+.slider img {
+    display: block;
+    width: 100%;
+}
+
+.gnb{
+    display: flex;
+}
+
+.gnb a {
+    line-height: 100px;
+    display: block;
+    height: 100px;
+    padding: 0 40px;
+}
+
+.gnb a:hover {
+    color: orangered;
+}
+
+/* contents */
+.contents {
+    height: 200px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contents .item {
+    width: 384px;
+}
+
+.board .board_title {
+    display: flex;
+    gap: 4px;
+    border-bottom: solid 3px #ff6347;
+}
+
+.board .board_title h3 {
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    flex: 1;
+}
+
+.board .board_title h3:first-child {
+    background-color: #ff6347;
+    color: #ffffff;
+}
+
+.board .board_list {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.board .board_li {
+    text-decoration: underline;
+}
+
+.item.link ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 밑에껀 내가 한 것. 결과는 같은데 강사님꼐 더 간단함 */
+/* .item.link li a{
+    border-radius: 8px;
+    background-color: #d9d9d9;
+    display: block;
+    width: 184px;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;
+} */
+
+.item.link li {
+    border-radius: 8px;
+    background-color: #d9d9d9;
+    width: 184px;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;}
+
+
+
+.link ul li:nth-child(1), .link ul li:nth-child(2){
+    margin-bottom: 10px;
+}
+.link ul li:nth-child(1), .link ul li:nth-child(3){
+    margin-right: 16px;
+}
+
+
+.footer {
+    display: flex;
+    height: 100px;
+    background-color: #eee;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.sns{
+    display: flex;
+    gap: 24px;
+
+}
+
+.footer_logo img {
+    filter: grayscale(100%);
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+
+
+
