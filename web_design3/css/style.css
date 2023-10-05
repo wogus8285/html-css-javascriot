@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}    
+
+.body{
+    color: #222;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}    
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #002866;
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li a:hover {
+    color: orangered;
+}
+
+.gnb li a {
+    display: block;
+    padding: 0 40px;
+    height: 100px;
+    line-height: 100px;
+}
+
+
+
+
+/* 컨텐츠 */
+
+.contents{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+
+}
+
+.contents .board, .contents .banner, .contents .link {
+    height: 180px;
+    flex: 1;
+    /* background-color: #eee;   */
+}
+
+.contents .board {
+}
+
+
+.board .titles {
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #ff6347;
+}
+
+.board .titles h2{
+    flex: 1;
+    background-color: #ff6347;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    /* 첨 봄 밑에꺼 */
+    cursor:pointer;
+}
+
+.board .titles h2:last-child{
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.board ul {
+    padding: 10px;
+}
+
+.board ul li a {
+    display: block;
+    padding: 4px;
+}
+
+.board ul li a:hover {
+    text-decoration: underline;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.link li a {                     
+    display: block;
+    background-color: #d9d9d9;
+    height: 85px;
+    text-align: center;
+    line-height: 85px;
+    width: 184px;
+    border-radius: 8px;
+}
+
+.link li a:hover {
+    font-weight: bold;
+
+}
+
+
+.footer {
+    display: flex;
+    background-color: #eee;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer .sns {
+    display: flex;
+    gap: 30px;
+}
+
+
+.contents .banner {}
+.contents .link {}

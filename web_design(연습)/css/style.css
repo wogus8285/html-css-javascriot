@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    display: block;
+}
+
+.body{
+    color: #222;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    align-items: center;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #002866;
+}
+
+.gnb {
+    display: flex;
+    gap: 40px;
+    padding-right: 40px;
+}
+
+/*  */
+/* 내가 여기서, 갭으로 해버려서 글자를 클릭해야만, 호버가 됨! ㅠㅜㅠ 블럭 만들고 키우자 */
+/*  */
+
+.gnb li a {
+    display: block;
+    /* padding: 0 40px; */
+    height: 100px;
+    line-height: 100px;
+}
+
+
+
+.gnb a:hover{color: #ff4184;}
+
+/* 컨텐츠 시작 */
+
+.contents{
+    margin:10px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.titles{
+    display: flex;
+    gap: 4px;
+    border-bottom:3px solid #ff6347;
+}
+
+.titles h2 {
+    height: 48px;
+    background-color: #ff6347;
+    flex:1;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 48px;
+    text-align: center;
+    color: #fff5cf;
+
+}
+
+.titles h2:nth-child(2){
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texts i{
+    color: #ff4184;
+}
+
+.list{
+    display: flex;
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+
+.list li{
+    line-height: 85px;
+    width: 184px;
+    height: 85px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+}
+
+.list li a:hover{
+    font-weight: bold;
+}
+
+.list li a{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    padding: 0 20px;
+    height: 100px;
+    display: flex;
+    background-color: #eee;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer ul{
+    gap: 24px;
+    display: flex;
+}
+
+.footer ul li a:hover {
+    font-weight: bold;
+}
+
+.footer ul li a {
+    /* cursor: ; */
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.footer ul li {
+    /* display: block; */
+}
+
+
+
+
+.board,
+.banner,
+.list {
+    /* background-color: #red; */
+    flex: 1;
+}
