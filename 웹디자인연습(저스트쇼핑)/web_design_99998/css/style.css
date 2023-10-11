@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+img{
+    display: block;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.header{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(1, 1, 200);
+}
+
+.header a:hover{
+    color: orangered;
+}
+
+.gnb{
+    display: flex;
+}
+
+.gnb > li  {
+    position: relative;
+}
+
+.gnb ul {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+
+    display: none;
+
+}
+ 
+/*.gnb .ooo {border-right: 1px solid rgb(1, 1, 200);} */
+
+.gnb ul li a  {
+    display: block;
+    background-color: #f2f2f2;
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.gnb > li > a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 40px;
+}
+
+/* slider */
+.slider{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides{
+    /* overflow: hidden; */
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -100%;
+}
+
+/* contents */
+.contents{
+    padding: 10px 0;
+    height: 200px;
+    display: flex;
+    gap: 24px;
+}
+
+.contents > div {
+    flex: 1;
+    /* background-color: red; */
+}
+
+/* 컨텐츠(보드) */
+.board{
+    position: relative;
+}
+
+.titles{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid orangered;
+    cursor: pointer;
+}
+
+.titles h3{
+    flex: 1;
+    height: 48px;
+    line-height: 48px;
+    background-color: #eee;
+    color: #222;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+h3.active{
+    color: #f2f2f2;
+    background-color: orangered;
+}
+
+.notice_list a{
+    padding: 5px 0;
+    display: block;
+    width: 360px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* display: none; */
+}
+
+/*  */
+
+.board .notice_list {
+    padding: 10px 6px;
+}
+
+.board .notice_list li {
+    padding-left: 10px;
+    position: relative;
+}
+
+.board .notice_list li::before {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    content: '>';
+    color: orangered;
+}
+/*  */
+
+
+.gallery_list a:hover img {
+    border: 1px solid orangered;
+}
+
+.gallery_list  {
+    position: absolute;
+    top: 52px;
+    left: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+
+    display: none;
+}
+
+/* 컨텐츠(링크) */
+.link{}
+
+.link ul {
+    display: flex;
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+
+.link a {
+    text-align: center;
+    line-height: 85px;
+    display: block;
+    background-color: #999;
+    width: 184px;
+    height: 85px;
+    border-radius: 8px;
+}
+
+/* 푸터 */
+.footer {
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+ }
+
+ .sns{
+    display: flex;
+    gap: 30px;
+ }
+
+ .sns a:hover{
+    color: #000;
+ }
+
+ .sns a{
+    color: #444;
+    display: block;
+    height: 100px;  
+    line-height: 100px;
+}
+
+/* 모달 */
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    line-height: 1.9;
+    width: 400px;
+    height: 400px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    padding: 0 30px;
+
+    /* display: none; */
+}
+
+.modal h2{
+    padding-top: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

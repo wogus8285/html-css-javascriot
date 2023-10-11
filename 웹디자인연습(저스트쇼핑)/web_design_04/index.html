@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST 쇼핑몰</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><img src="./images/logo_color.jpg" alt="로고"></div>
+            <ul class="gnb">
+                <li class="menu-item">
+                    <a href="#">탑</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">아우터</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">자켓</a></li>
+                        <li><a href="#">코트</a></li>
+                        <li><a href="#">가디건</a></li>
+                        <li><a href="#">머플러</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">팬츠</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">청바지</a></li>
+                        <li><a href="#">짧은바지</a></li>
+                        <li><a href="#">긴바지</a></li>
+                        <li><a href="#">레깅스</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">악세서리</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">귀고리</a></li>
+                        <li><a href="#">목걸이</a></li>
+                        <li><a href="#">반지</a></li>
+                        <li><a href="#">팔찌</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="slider">
+                <div class="slide"><img src="./images/mainbanner.jpg" alt="슬라이드1"></div>
+            </div>
+        </div>
+        
+        <div class="contents">
+            <div class="board">
+                <div class="titles">
+                    <h2>공지사항</h2>
+                    <h2>갤러리</h2>
+                </div>
+                <ul class="notice_list">
+                    <li><a href="#"><i class="xi-angle-right"></i>2021년 무이자 할부 카드 안내 2021년 2월 무이자 할부 카드안내</a></li>
+                    <li><a href="#"><i class="xi-angle-right"></i>쿠폰 사용안내 2021년 2월 무이자 할부 카드 안내</a></li>
+                    <li><a href="#"><i class="xi-angle-right"></i>쿠폰다운로드 & 사용방법</a></li>
+                    <li><a href="#"><i class="xi-angle-right"></i>모바일 APP 설치하고 10%할인쿠폰받자!! 2021년 2월 무이자 할부</a></li>
+                </ul>
+                <!-- <ul class="gallery_list">
+                    <li><img src="https://picsum.photos/100" alt=""></li>
+                    <li><img src="https://picsum.photos/100" alt=""></li>
+                    <li><img src="https://picsum.photos/100" alt=""></li>
+                </ul> -->
+            </div>
+     
+            <div class="banner">
+                <img src="./images/smallbanner.jpg" alt="배너">
+            </div>
+
+            <div>
+                <ul class="link">
+                    <li><a href="#">나의 음악</a></li>
+                    <li><a href="#">클라우드</a></li>
+                    <li><a href="#">헤이음악</a></li>
+                    <li><a href="#">계정추가</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="f_logo"><img src="./images/logo_black.jpg" alt="하단로고"></div>
+            <div class="copyright">
+                ⓒ 2021 Kakao Enterprize. The Kakao is a trademark of Kakaocorp.
+            </div>
+            <div class="sns">
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">youtube</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup">
+        <h2>이것은 팝업입니다.</h2>
+        <p>공공필요에 의한 재산권의 수용·사용 또는 제한 및 그에 대한 보상은 법률로써 하되, 정당한 보상을 지급하여야 한다. 모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과
+            죄와 초병·초소·유독음식물공급·포로에 관한 죄중 법률이 정한 경우에 한하여 단심으로 할 수 있다. 다만, 사형을 선고한 경우에는 그러하지 아니하다.</p>
+            <a href="#" class="close_btn">닫기</a>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript 코드
+        document.addEventListener("DOMContentLoaded", function () {
+            var popup = document.querySelector(".popup");
+            var closeBtn = document.querySelector(".close_btn");
+    
+            // 닫기 버튼 클릭 시 팝업 숨기기
+            closeBtn.addEventListener("click", function (e) {
+                e.preventDefault(); // 링크 클릭 시 페이지 이동 방지
+                popup.style.display = "none";
+            });
+        });
+    
+        document.addEventListener("DOMContentLoaded", function () {
+            var menuItems = document.querySelectorAll(".menu-item"); // 모든 메뉴 항목 선택
+    
+            // 각 메뉴에 대해 이벤트 리스너를 추가
+            menuItems.forEach(function (menuItem) {
+                var topMenuItem = menuItem.querySelector("a"); // 메뉴 항목 선택
+                var subMenu = menuItem.querySelector(".sub-menu"); // 서브 메뉴 선택
+    
+                // 마우스를 메뉴 항목에 올렸을 때
+                topMenuItem.addEventListener("mouseover", function () {
+                    subMenu.style.display = "block";
+                });
+    
+                // 마우스를 메뉴 항목에서 벗어났을 때
+                topMenuItem.addEventListener("mouseout", function () {
+                    subMenu.style.display = "none";
+                });
+            });
+        });
+    </script>
+    </body>
+    </html>

@@ -1,0 +1,263 @@
+
+        /* 전역 스타일 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-size: 14px;
+            line-height: 1.4;
+            color: #222;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        .wrap{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 헤더 스타일 */
+        .header {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #002966;
+            position: relative;
+            z-index: 2;
+        }
+
+        .header .logo img {
+            /* 로고 이미지 스타일 */
+        }
+
+        .gnb {
+            display: flex;
+        }
+
+        .gnb > li {
+            position: relative;
+        }
+
+        .gnb > li > a {
+            display: block;
+            padding: 0 40px;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        .gnb > li > a:hover {
+            color: orangered;
+        }
+
+        /* 서브 메뉴 스타일 */
+        .sub-menu {
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+
+        .sub-menu li:hover {
+            background-color: #f0f0f0;
+        }
+
+        .gnb > li:hover .sub-menu {
+            display: block;
+        }
+
+        /* 슬라이더 스타일 */
+        .slider {
+            position: relative;
+            z-index: 1;
+        }
+
+        .slider .slide img {
+            /* 슬라이드 이미지 스타일 */
+        }
+
+        /* 콘텐츠 스타일 */
+        .contents {
+            height: 200px;
+            padding: 10px 0;
+            display: flex;
+            gap: 24px;
+        }
+
+        .contents > div {
+            flex: 1;
+        }
+
+        /* 게시판 스타일 */
+        .board {
+            /* 게시판 스타일 */
+        }
+
+        .board .titles {
+            /* 게시판 제목 스타일 */
+            display: flex;
+            gap: 4px;
+            border-bottom: 3px solid #ff6347;
+        }
+
+        .board .titles h2 {
+            /* 게시판 제목 스타일 */
+            color: #fff;
+            margin: 0px;
+            font-size: 14px;
+            font-weight: normal;
+            background-color: #ff6347;
+            width: 190px;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+
+        }
+
+        .board .titles h2:last-child {
+            /* 게시판 제목 스타일 */
+            background-color: #f0f0f0;
+            color: #222;
+        }
+
+        .board .notice_list {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap; /* 텍스트가 한 줄에 표시되도록 설정 */
+            overflow: hidden; /* 요소 내부의 내용이 넘칠 경우 숨김 처리 */
+            text-overflow: ellipsis; /* 생략 기호 (...)로 텍스트를 줄입니다. */
+            width: 360px; /* 텍스트가 표시될 최대 너비 설정 */
+            /* 공지사항 스타일 */
+
+        }
+
+        .board .notice_list {
+            margin: 0;
+            padding: 0;
+            white-space: nowrap; /* 텍스트가 한 줄에 표시되도록 설정 */
+            overflow: hidden; /* 요소 내부의 내용이 넘칠 경우 숨김 처리 */
+            text-overflow: ellipsis; /* 생략 기호 (...)로 텍스트를 줄입니다. */
+            width: 360px; /* 텍스트가 표시될 최대 너비 설정 */
+        }
+
+        .board .notice_list li {
+            padding-top: 15px;
+        }
+
+        .board .notice_list i {
+            /* 아이콘 스타일 */
+            color: red;
+        }
+
+        .board .notice_list a {
+            /* 공지사항 링크 스타일 */
+        }
+
+        /* 배너 스타일 */
+        .banner {
+            /* 배너 스타일 */
+        }
+
+        /* 링크 스타일 */
+        .link {
+            display: flex;
+            gap: 10px 16px;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+
+        .link li a {
+            display: block;
+            width: 184px;
+            height: 85px;
+            background-color: #d9d9d9;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 85px;
+        }
+
+        .link li a:hover {
+            background-color: #979797;
+            font-weight: bold;
+        }
+
+        /* 푸터 스타일 */
+        .footer {
+            height: 100px;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .footer .f_logo img {
+            /* 푸터 로고 스타일 */
+        }
+
+        .footer .copyright {
+            /* 저작권 정보 스타일 */
+        }
+
+        .footer .sns {
+            /* SNS 아이콘 스타일 */
+        }
+
+        /* 팝업 스타일 */
+        .popup {
+            width: 600px;
+            height: 400px;
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .popup h2 {
+            font-size: 26px;
+        }
+
+        .popup p {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .popup .close_btn {
+            display: block;
+            width: 60px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            background-color: #666;
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 내용 생략 -->
+</body>
+</html>
