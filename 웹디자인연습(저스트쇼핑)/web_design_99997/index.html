@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습하기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/jquery/basic/script/jquery-3.7.1.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><a href="#"><img src="./images/logo.png" alt="#"></div></a>
+            <ul class="gnb">
+                <li><a href="#">탑</a>
+                    <ul>
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">상의</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">아우터</a>
+                    <ul>
+                        <li><a href="#">외투</a></li>
+                        <li><a href="#">외투</a></li>
+                        <li><a href="#">외투</a></li>
+                        <li><a href="#">외투</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">팬츠</a>
+                    <ul>
+                        <li><a href="#">바지</a></li>
+                        <li><a href="#">바지</a></li>
+                        <li><a href="#">바지</a></li>
+                        <li><a href="#">바지</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">악세서리</a>
+                    <ul>
+                        <li><a href="#">장신구</a></li>
+                        <li><a href="#">장신구</a></li>
+                        <li><a href="#">장신구</a></li>
+                        <li><a href="#">장신구</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide_1"><a href="#"><img class="aaa" src="./images/slide_01.jpg" alt=""></a></div>
+                <div class="slide_2"><a href="#"><img class="bbb" src="./images/slide_02.jpg" alt=""></a></div>
+                <div class="slide_3"><a href="#"><img src="./images/slide_03.jpg" alt=""></a></div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="board">
+                <div class="titles">
+                    <h2 class="btn1 active">notice</h2>
+                    <h2 class="btn2">banner</h2>
+                </div>
+                <ul class="notice_list" class="active">
+                    <li><a href="#">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세. 무궁화 삼천리 화려강산</a></li>
+                    <li><a href="#">대한사람 대한으로 길이 보전하세</a></li>
+                    <li><a href="#">무궁화 삼천리 화려강산</a></li>
+                    <li><a href="#">이 기상과 이 마음으로 충성을 다하여 괴로우나 즐거우나 나라 사랑하게. 가을 하늘 공활한데 높고 구릉 없이</a></li>
+                </ul>
+                <ul class="gallery_list" class>
+                    <li><a href="#"><img src="https://picsum.photos/184/59" alt=""></a></li>
+                    <li><a href="#"><img src="https://picsum.photos/185/60" alt=""></a></li>
+                    <li><a href="#"><img src="https://picsum.photos/184/61" alt=""></a></li>
+                    <li><a href="#"><img src="https://picsum.photos/185/61" alt=""></a></li>
+                </ul>
+            </div>
+
+            <div class="banner"><a href="#"><img src="./images/banner.jpg" alt="#"></a></div>
+
+            <div class="link">
+                <ul>
+                    <li><a href="#">헤이음악</a></li>
+                    <li><a href="#">지니뮤직</a></li>
+                    <li><a href="#">멜론뮤직</a></li>
+                    <li><a href="#">인기차트</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f_logo"><a href="#"><img src="./images/logo_f.png" alt="#"></a></div>
+
+            <div class="coptright"><p>(c)이것은 우리의 자산입니다.</p></div>
+
+            <div class="sns">
+                <a href="#">인스타</a>
+                <a href="#">카카오</a>
+                <a href="#">트위터</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal">
+        <h2>이것은 팝업입니다</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis, cupiditate at? Quidem reprehenderit earum a velit sed laboriosam perferendis maiores dicta. Quia quod alias veritatis, eligendi doloribus laborum iste quo!</p>
+        <button class="close_btn">닫기</button>
+    </div>
+
+
+    <!-- 스크립트 'modal' -->
+    <script>
+        $('.close_btn').click(
+            function() {
+                $('.modal').css('display' , 'none')
+            }
+        )
+    </script>
+
+    <!-- 스크립트 'GNB' -->
+    <script>
+        $('.gnb li a').mouseover(
+            function(){
+                $('.gnb ul').show()
+            }
+        )
+        
+        $('.gnb li a').mouseout(
+            function(){
+                $('.gnb ul').hide()
+            }
+        )
+        
+        </script>
+
+    <!-- 스크립트 보드판 -->
+    <script>
+        $('.btn1').click(
+            function(){
+                $('.btn1').addClass('active')
+                $('.btn2').removeClass('active')
+                $('.notice_list').show()
+                $('.gallery_list').hide()
+            }
+        )
+
+        $('.btn2').click(
+            function(){
+                $('.btn1').removeClass('active')
+                $('.btn2').addClass('active') 
+                $('.gallery_list').show()
+                $('.notice_list').hide()
+            }
+        )
+
+        $('.gallery_list').hide()
+    </script>
+
+    <!-- 슬라이드 넘기기 -->
+    <script>
+      $('.slide_1').click(
+            function(){
+                $('.slides').css('left','-100%')
+            }
+        )
+      $('.slide_2').click(
+            function(){
+                $('.slides').css('left','-200%')
+            }
+        )
+      $('.slide_3').click(
+            function(){
+                $('.slides').css('left','0%')
+            }
+        )
+    </script>
+
+</body>
+
+</html>

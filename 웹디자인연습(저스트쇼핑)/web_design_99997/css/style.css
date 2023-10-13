@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    display: block;
+}
+
+body{
+    font-size: 14px;
+    color: #222;
+    line-height: 1.6;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(3, 3, 173);
+    /* background-color: #222; */
+}
+
+.logo a:hover img{
+    width: 160px;
+}
+
+.header .gnb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.header .gnb a:hover {
+    color: orangered;
+}
+
+.header .gnb > li > a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    padding: 0 40px;
+}
+
+.header .gnb > li {
+    position: relative;    
+}
+
+.header .gnb li ul {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.header .gnb ul a {
+    background-color: #fff;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;  
+}
+
+/* slider */
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+
+.slides a:hover img{
+    /* position: absolute;
+    top: 0;
+    left: 100%;
+    height: 500px;
+    border: 5px solid #222; */
+    
+}
+
+/* .slides a:hover{
+    position: absolute;
+    top: 0;
+    left: 100%;
+} */
+
+
+.slides{
+    display: flex;
+    position: absolute;
+    top: 0;
+    /* left: -100%; */
+}
+
+/* contents */
+.contents{
+    display: flex;
+    gap: 24px;
+    padding: 10px 0;
+}
+
+.contents > div {
+    flex: 1;
+}
+
+/* contents -> board */
+.board{
+    position: relative;
+}
+
+.titles{
+    display: flex;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    gap: 4px;
+    border-bottom: 3px solid rgb(252, 71, 16);
+    cursor: pointer;
+}
+
+.board h2:hover {
+    font-weight: bold;
+}
+
+.board h2 {
+    width: 190px;
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.board h2.active {
+    color: #f2f2f2;
+    background-color: rgb(252, 71, 16);
+}
+
+.notice_list a:hover {
+    text-decoration: underline;
+}
+
+.notice_list a{
+    padding: 5px 0;
+    display: block;
+    width: 360px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* display: none; */
+}
+
+.notice_list a::before{
+    content: '>';
+    color: orangered;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.board .notice_list li {
+    padding-left: 10px;
+    position: relative;
+}
+
+.gallery_list a:hover img {
+    border: 2px solid orangered;
+    width: 380px;
+    height: 123px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.gallery_list {
+    overflow: hidden;
+    position: absolute;
+    top: 52px;
+    left: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 10px;
+
+    /* display: none; */
+}
+
+/* banner */
+
+.banner a:hover img {
+    border: 2px solid orangered;
+    height: 180px;
+    width: 384px;
+}
+
+/* link */
+.link{
+    /* background-color: red; */
+}
+
+.link ul {
+    display: flex;
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+
+.link a:hover {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ccc;
+    /* font-style:  */
+}
+
+.link a {
+    text-align: center;
+    line-height: 85px;
+    display: block;
+    background-color: #dbdada;
+    width: 184px;
+    height: 85px;
+    border-radius: 8px;
+}
+
+/* 푸터 */
+.footer {
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+ }
+
+ .f_logo a:hover img{
+    filter: sepia(100%);
+    /* mix-blend-mode: multiply; */
+    /* opacity: 0.7; */
+ }
+
+ .sns{
+    display: flex;
+    gap: 30px;
+ }
+
+ .sns a:hover{
+    color: #000;
+    text-decoration: underline;
+ }
+
+ .sns a{
+    color: #555;
+    display: block;
+    height: 100px;  
+    line-height: 100px;
+}
+
+/* 모달 */
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    line-height: 1.9;
+    width: 400px;
+    height: 300px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    padding: 30px;
+    
+    /* display: none; */
+}
+
+.modal h2{
+    text-align: center;
+}
+
+.modal p{
+    padding-top: 20px;
+}
+
+.close_btn {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;}
+
