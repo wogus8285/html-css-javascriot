@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just연습</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/jquery/basic/script/jquery-3.7.1.js"></script>
+
+</head>
+<body>
+
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <a href="#"><img src="./images/logo.png" alt="lg"></a>
+            </div>
+            <ul class="gnb">
+                <li>
+                    <a href="#">탑</a>
+                    <ul>
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">상의</a></li>
+                        <li><a href="#">상의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">아우터</a>
+                    <ul>
+                        <li><a href="#">외투</a></li>
+                        <li><a href="#">외투</a></li>
+                        <li><a href="#">외투</a></li>
+                        <li><a href="#">외투</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">팬츠</a>
+                    <ul>
+                        <li><a href="#">하의</a></li>
+                        <li><a href="#">하의</a></li>
+                        <li><a href="#">하의</a></li>
+                        <li><a href="#">하의</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">악세서리</a>
+                    <ul>
+                        <li><a href="#">장신구</a></li>
+                        <li><a href="#">장신구</a></li>
+                        <li><a href="#">장신구</a></li>
+                        <li><a href="#">장신구</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><a href="#"><img src="./images/slide_01.jpg" alt=""></a></div>
+                <div class="slide"><a href="#"><img src="./images/slide_02.jpg" alt=""></a></div>
+                <div class="slide"><a href="#"><img src="./images/slide_03.jpg" alt=""></a></div>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="board">
+                <div class="titles">
+                    <h2>공지사항</h2>
+                    <h2>갤러리</h2>
+                </div>
+                <ul class="notice_list">
+                    <li><a href="#">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+                    <li><a href="#">aaaaaaaaaaaaaaaaaa</a></li>
+                    <li><a href="#">aaaaaaaaaaaaaaaaa</a></li>
+                    <li><a href="#">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+                </ul>
+                <ul class="gallery_list">
+                    <li><a href="#">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+                    <li><a href="#">aaaaaaaaaaaaaaaaaa</a></li>
+                    <li><a href="#">aaaaaaaaaaaaaaaaa</a></li>
+                    <li><a href="#">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li>
+                </ul>
+            </div>
+
+            <div class="banner">
+                <a href="#"><img src="./images/banner.jpg" alt="#"></a>
+            </div>
+
+            <div class="link">
+                <ul>
+                    <li><a href="#">헤이음악</a></li> 
+                    <li><a href="#">ㅇㅇ음악</a></li> 
+                    <li><a href="#">ㅅㅅ음악</a></li> 
+                    <li><a href="#">ㅎㅎ음악</a></li> 
+                </ul>    
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="f_logo"><img src="./images/logo_f.png" alt="#"></div>
+            <div class="copyright"><p>(c)으으응으으응ㅇ으으응</p></div>
+            <div class="sns">
+                <a href="#">인스타</a>
+                <a href="#">인스타</a>
+                <a href="#">인스타</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.gnb').hover(function(){
+            console.log( ' dd ')
+            $('.gnb ul').show('fast')
+        })
+    </script>
+</body>
+</html>

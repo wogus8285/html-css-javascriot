@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #ffffff;
+    color: #333333;
+}
+
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+}
+
+/* 헤더 */
+.header{
+    background-color: #eee;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    border-bottom: 1px solid #333333;
+}
+
+.header a:hover {
+    color: orangered;
+}
+
+.logo img:hover{
+
+}
+
+.gnb{
+    display: flex;
+}
+
+.gnb > li {
+    position: relative;
+    padding: 40px;
+}
+
+.gnb ul {
+    width: 100%;
+    background-color: #eee;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 160px;
+    display: none;
+    z-index: 1;
+}
+
+
+.gnb ul a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+/* slider */
+.slider{
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slides{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+/* contents */
+.contents{
+    margin: 10px 0;
+    display: flex;
+    gap: 24px;
+    height: 200px;
+}
+
+
+
+.contents > div {
+    flex: 1;
+    /* background-color: red; */
+}
+
+.board{}
+
+.titles{
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid #222;
+}
+
+h2{
+    display: block;
+    flex: 1;
+    width: 174px;
+    height: 40px;
+    background-color: #eee;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 40px;
+}
+
+h2.active{
+    color: #fff;
+    background-color: #222;
+}
+
+.notice_list li:hover{
+    text-decoration: underline;
+}
+
+.notice_list{
+    line-height: 2.5;
+    /* display: none; */
+    cursor: pointer;
+}
+
+.gallery_list {
+    display: none;
+}
+
+.gallery_list ul{
+    display: flex;
+}
+
+.board img {
+    margin-top: 5px;
+    width: 117px;
+}
+
+
+
+/* footer */
+.footer{
+    background-color: #eee;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.sns{
+    display: flex;
+    /* align-items: center; */
+}
+
+.sns img{
+    margin-left: 5px;
+}
+
+
+/* 모달 */
+
+.modal{
+    width: 300px;
+    height: 340px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3{
+    padding: 30px;
+}
+
+p{
+    padding: 10px;
+}
+
+button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}

@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 14px;
+    color: #222;
+    line-height: 1.6;
+}
+
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid darkblue;
+}
+
+.gnb{
+    display: flex;
+}
+
+.gnb > li > a {
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.gnb > li {
+    position: relative;
+}
+
+.gnb ul{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+}
+
+.gnb ul li{
+
+}
+
+.gnb ul a{
+    display: block;
+    background-color: #fff;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: none;
+}
+
+.gnb ul a:hover{
+    color: orangered;
+}
+
+/* .slider */
+.slider{
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+
+.slides{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* contents */
+.contents{
+    display: flex;
+    gap: 24px;
+    padding: 10px 0;
+}
+
+.contents > div {
+    flex: 1;
+    /* background-color: red; */
+} 
+
+.board{
+    width: 384px;
+}
+
+.titles{
+    display: flex;
+    gap: 4px;
+    border-bottom: 3px solid orangered;
+}
+
+h2{
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    flex: 1;
+    background-color: #ddd;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.notice_list li a{
+    line-height: 2.3;
+    display: block;
+    width: 360px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.gallery_list {
+    display: none;
+}
+
+.link ul{
+    display: flex;
+    gap: 10px 16px;
+    flex-wrap: wrap;
+}
+.link li{
+    height: 85px;
+    width: 184px;
+    background-color: #ddd;
+    display: block;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 85px;
+}
+
+.link li a{
+    display: block;
+    
+}
+
+/*  footer */
+.footer{
+    padding: 40px;
+    background-color: #d9d9d9;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
