@@ -1,150 +1,123 @@
 // Variable 변수
 // var, let, const
+// 블럭 scope
 
-var username = 'Alice'
-var userage = 25
-var useremali = 'alice@gmail.com'
 
 // 변수명 규칙
-// $ _ 석으면 됨
-// 아ㄹ파벳도 당능
-// 그런데 가끔 저작권 침해 당할수도
+// - 변수는 문자와 숫자, $와 _만 사용
+// - 첫글자는 숫자불가
+// - 예약어 사용불가
+
+// 변수의 타입
+// 원시테이타 : string, number, boolean, null, undefined
+// object : 싱글데이타를 묶어놓은 데이타
+// function : 일급객체
 
 
-
-// console.log(username)
-// comnole.log(userage)
-// comnole.log(userem)
-
-
-// 11,..   버 불록을 무시하낟
-// ㅣㄷㅅ 샤
-// 아니네밍 ; ㅗ뮫ㄱ
-
-// ㅍㄷㄱ  XMRQLDD LDLFTRL tmRLRK RKSDMGKEKEK일깃와 쓰기가 가능하다.$
-//  //2ㅣ ㅐㅇㄳ
-// -
-// -
-// -
-// -
-// --
-// ㅣㅅ ㅛㅑㅛ기ㄸ         -
-
-// -
-
-
-// ㅜ챠ㅏ앻 타이틀컨트률 세입 ㅎ유휴ㅡ 
-
-// 성불ㄹ고 숱먀ㅜ
-
-//  랴ㅜ샤ㅓㅜ 블ㄹ헛 쇼ㅡㅊ커크
-
-
-
-//  const
-
-//  {
-//     const subjexr = 'html'
-//     subject = css
-
-// 컨트섵트 아쩌굴 -> 강수 앴다. 절배 변하하지 않는다.$
-
-
-
-//  현업에선 comst를 주러 씀
-
-
-
+// 1. var
+// 블럭을 무시한다.
+// 읽기, 쓰기 가능.
 {
-    const name1 = 'Alice'
-    const name2 = 'alice'
-
-    console.log(name1, name2)
-
-    const firstName = 'John'
-    const lastName = 'Snow'
-    const fullName = firstName + ' '  + lastName
-
-    console.log(fullName)
-    console.log(`${firstName}  ${lastName}`)
+    // var myname = 'Tom'
+    // myname = 'Jane'
+    // console.log(myname)   
 }
 
+// console.log(myname)   
 
-// 숫자형 
-
+// // 2. let
+// // 읽기, 쓰기 가능.
 {
-    const num = 10
-    const PI = 3.14
-    console.log(`값은 ${num}이고, 타입은 ${typeof num}입니다`)
-    console.log(`값은 ${PI}이고, 타입은 ${typeof PI}입니다`)
+    // let title = 'html'
+    // console.log(title)
 
-    const a = 1 / 0
-    const b = -1 / 0
-    const c = 'html' / 0
+    // title = 'css'
+    // console.log(title)
+}
 
-    console.log(a)
-    console.log(b)
-    console.log(c)
+// console.log(title)
 
+// 3. const 
+// 상수 - 읽기만 가능, 변하지 않는다.
+{
+    // const subject = 'html'
+    // // subject = 'css'
+    // console.log(subject)
+}
+
+// // 4. 변수의 데이타 타입 - 자료형
+
+// // 문자형 String
+{
+    // const name1 = 'Alice'
+    // const name2 = 'alice'
+    
+    // console.log(name1, name2)
+
+    const firstName = 'Jonh'
+    const lastName = 'Snow'
+    const fullName = firstName + ' ' + lastName
+
+    // console.log(fullName)
+    console.log(`You know nothing, ${firstName} ${lastName}.`)
+}
+
+// 숫자형 Number
+{
+    // const num = 10  
+    // const PI = 3.14 
+    // console.log(`값은 ${num}이고, 타입은 ${typeof num}입니다.`)
+    // console.log(`값은 ${PI}이고, 타입은 ${typeof PI}입니다.`)
+
+    // const a = 1 / 0 
+    // const b = -1 / 0 
+    // const c = 'html' / 10 
+    // const d = 19999 / 235 
+
+    // console.log(a)
+    // console.log(b)
+    // console.log(c)
+    // console.log(d)
 }
 
 // 불(불린, 불리언) Boolean
 {
-    const a = true
-    const b = false
+    // const a = true
+    // const b = false
 
-    const name = 'Alice'
-    const age = 16
+    // const name = 'Alice'
+    // const age = 16
 
-    console.log(name == 'Alice')
-    console.log(age > 20)
+    // console.log(name == 'Alice')
+    // console.log(age > 20)
+    // console.log(a)
 }
 
-//null - 존재하지 않는 값
-//underfined - 값이 항당되지 않음
-
+// null - 존재하기 않는 값
+// undefined - 값이 할당되지 않음
 {
-
-    const fall = null 
-    let winter
-
+    // const fall = null
+    // let winter
+    // console.log(fall)
+    // console.log(winter)
+    // console.log(summer)
 }
 
 //5. 대화상자 alert, prompt, confirm
 {
-//   const name = prompt('이름을 입력하세요', '영업팀')
-//     alert(`안녕하세요, ${name}님, 환영합니다 `)
-    const isCheck = confirm('확인하였습니까?')
-    console.log(isCheck)
+    // const name = prompt('이름을 입력하세요')
+    // alert(`안녕하세요, ${name}님, 환영합니다.`)
+    // const isCheck = confirm('확인하였습니까?')
+    // console.log(isCheck)
 }
-
 
 //6. 형변환
 {
-    const mathScore = prompt('수학점수는?')
-    const engScore  = prompt('영엉점수는?')
-    const score = (mathScore + engScore) / 2
- b
-
+    // const mathScore = prompt('수학점수는?')
+    // const engScore = prompt('영어점수는?')
+    // const score = (Number(mathScore) + Number(engScore)) / 2
+    // alert(score)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
